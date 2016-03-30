@@ -1,0 +1,47 @@
+/**
+ * MIT <https://opensource.org/licenses/MIT>
+ * Senad Ličina <2015>
+ */
+.row {
+  display: flex;
+}
+
+.row > .col {
+  flex: 1;
+  margin: 5px;
+}
+
+.row > .col.borderless {
+  margin: 0px;
+  padding: 0px;
+}
+
+.row > .col-33 {
+  width: 33.33%;
+  flex: none;
+}
+
+.row > .col-50 {
+  width: 50%;
+  flex: none;
+}
+
+.row > .vert-center {
+  align-self: center;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
