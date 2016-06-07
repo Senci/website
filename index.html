@@ -1,78 +1,107 @@
+<!-- Wer das liest ist doof! -->
 <html>
   <head>
-    <script src="https://use.fonticons.com/cf8a3f19.js"></script>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/flexbox.css" type="text/css" />
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/flexbox.css" type="text/css" /> -->
   </head>
   <body>
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo black-text"><b>Senad Ličina</b> {dev}</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down black-text">
+            <li>
+              <a class="page-scroll black-text waves-effect waves-orange" href="#home">.home</a>
+            </li>
+            <li>
+              <a class="page-scroll black-text waves-effect waves-orange" href="#about">.about</a>
+            </li>
+            <li>
+              <a class="page-scroll black-text waves-effect waves-orange" href="#gallery">.gallery</a>
+            </li>
+          </ul>
 
-    <div id="navbar" class="row">
-      <div class="logo col col-50 borderless">
-        <a href="#main"><b>Senad Ličina</b></a> {dev}
-      </div>
-      <a class="navbar-item col borderless page-scroll" href="#main">.home</a>
-      <a class="navbar-item col borderless page-scroll" href="#about">.about</a>
-      <a class="navbar-item col borderless page-scroll" href="#gallery">.gallery</a>
+          <a href="#" data-activates="mobile-demo" class="right button-collapse black-text"><i class="material-icons">menu</i></a>
+          <!-- Side Nav (Mobile Hamburger Menu) -->
+          <ul class="side-nav black" id="mobile-demo">
+            <li class="active">
+              <a class="page-scroll waves-effect waves-orange" href="#home">.home</a>
+            </li>
+            <li>
+              <a class="page-scroll waves-effect waves-orange" href="#about">.about</a>
+            </li>
+            <li>
+              <a class="page-scroll waves-effect waves-orange" href="#gallery">.gallery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-    <div id="main" data-enllax-ratio="0.8">
-      <div class="business-card">
-        <div class="row">
-          <div class="col avatar-container">
-              <div class="avatar pull-right"></div>
-          </div>
-          <div class="col vert-center">
-              <heading>Senad Ličina</heading>
-              <p>
-                Code Magician. Raver. Nerd.<br />
-                Hamburg, Germany.
-              </p>
+    <div id="home" data-enllax-ratio="0.8">
+      <!-- Business Card -->
+      <section id="business-card" class="container row business-card">
+        <div class="col s12 m10 offset-m1 l8 offset-l2">
+          <div class="card grey darken-4 hoverable">
+            <div class="card-content">
+              <div class="row valign-wrapper">
+                <div class="col s5 valign">
+                  <img src="img/senci.jpg" class="avatar circle" />
+                </div>
+                <div class="col s7 valign">
+                  <h1 class="card-title font-poiret">Senad Ličina</h1>
+                  <p>
+                    Code Magician. Raver. Nerd.<br />
+                    Hamburg, Germany.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-action green-text">
+                <div class="row">
+                  <div class="col s4 m2 valign-wrapper center-align">
+                    <a href="https://github.com/Senci" class="valign center-align" target="_blank">
+                      <i class="icon icon-github-alt icon-4x valign center-align"></i>
+                    </a>
+                  </div>
+                  <div class="col s4 m2 valign-wrapper center-align">
+                    <a href="https://stackoverflow.com/users/1139383/senad" class="valign center-align" target="_blank">
+                      <i class="icon icon-stack-overflow icon-4x valign center-align"></i>
+                    </a>
+                  </div>
+                  <div class="col s4 m2 valign-wrapper center-align">
+                    <a href="https://soundcloud.com/s3nci" class="valign center-align" target="_blank">
+                      <i class="icon icon-soundcloud icon-4x valign center-align"></i>
+                    </a>
+                  </div>
+                  <div class="col s4 m2 valign-wrapper center-align">
+                    <a href="https://www.facebook.com/s3nci" class="valign center-align" target="_blank">
+                      <i class="icon icon-facebook-official icon-4x valign center-align"></i>
+                    </a>
+                  </div>
+                  <div class="col s4 m2 valign-wrapper center-align">
+                    <a href="https://www.xing.com/profile/Senad_Licina2" class="valign center-align" target="_blank">
+                      <i class="icon icon-xing icon-4x valign center-align"></i>
+                    </a>
+                  </div>
+                  <div class="col s4 m2 valign-wrapper center-align">
+                    <a href="https://twitter.com/s3nci" class="valign center-align" target="_blank">
+                      <i class="icon icon-twitter icon-4x valign center-align"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="vspace-25"> </div>
-
-      <div class="business-card">
-        <div class="row">
-          <div class="col center">
-            <a href="https://github.com/Senci" target="_blank">
-              <i class="icon icon-github-alt icon-4x"></i>
-            </a>
-          </div>
-          <div class="col center">
-            <a href="https://stackoverflow.com/users/1139383/senad" target="_blank">
-              <i class="icon icon-stack-overflow icon-4x"></i>
-            </a>
-          </div>
-          <div class="col center">
-            <a href="https://soundcloud.com/s3nci" target="_blank">
-              <i class="icon icon-soundcloud icon-4x"></i>
-            </a>
-          </div>
-          <div class="col center">
-            <a href="https://www.facebook.com/s3nci" target="_blank">
-              <i class="icon icon-facebook-official icon-4x"></i>
-            </a>
-          </div>
-          <div class="col center">
-            <a href="https://www.xing.com/profile/Senad_Licina2" target="_blank">
-              <i class="icon icon-xing icon-4x"></i>
-            </a>
-          </div>
-          <div class="col center">
-            <a href="https://twitter.com/s3nci" target="_blank">
-              <i class="icon icon-twitter icon-4x"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <section id="about" class="container">
+      <section id="about" class="container grey darken-4">
         <div class="row">
           <div class="col vert-center">
-            <h1>.about</h1>
+            <h2>.about</h2>
             <p>
               Moin Moin and welcome to my website!
             </p>
@@ -84,21 +113,19 @@
             </p>
             <p>
               Currently I'm working as a freelancer and thereby open for hire.
-              You can contact me via <a href="mailto:senad@licina.eu">e-mail</a>.
+              Feel free to contact me via <a href="mailto:senad@licina.eu">e-mail</a>, <a href="https://www.xing.com/profile/Senad_Licina2">XING</a> or <a href="https://www.facebook.com/s3nci">Facebook</a>.
             </p>
-            <h2><i class="icon icon-code"></i> Portfolio</h2>
+            <h4><i class="icon icon-code"></i> Portfolio</h4>
             <p>
               A selection of projects I've actively been involved in.
             </p>
             <div class="row">
-              <div class="col project-logo">
-                <a href="http://www.jeanyvespastis.com" target="_blank" class="jyp-logo">
-                  <div class="jyp-logo">
-                  </div>
-                  <!-- <img src="img/logo/jeanyvespastis.jpg" class="project-logo"/> -->
+              <div class="col s4 m2">
+                <a href="http://www.jeanyvespastis.com" target="_blank">
+                  <img src="img/logo/jeanyvespastis.jpg" class="circle project-logo"/>
                 </a>
               </div>
-              <div class="col vert-center">
+              <div class="col s8 m10">
                 <big>
                   JeanYvesPastis.com
                 </big>
@@ -110,12 +137,12 @@
               </div>
             </div>
             <div class="row">
-              <div class="col project-logo">
+              <div class="col s4 m2">
                 <a href="https://stuffle.it" target="_blank">
                   <img src="img/logo/stuffle.png" class="project-logo"/>
                 </a>
               </div>
-              <div class="col vert-center">
+              <div class="col s8 m10">
                   <big>
                     Stuffle
                   </big>
@@ -130,12 +157,12 @@
               </div>
             </div>
             <div class="row">
-              <div class="col project-logo">
+              <div class="col s4 m2">
                 <a href="https://www.starmoney.de" target="_blank">
                   <img src="img/logo/starmoney.png" class="project-logo"/>
                 </a>
               </div>
-              <div class="col vert-center">
+              <div class="col s8 m10">
                 <big>
                   StarMoney
                 </big>
@@ -146,11 +173,10 @@
                 </p>
               </div>
             </div>
-            <h2><i class="icon icon-magic"></i> Technologies</h2>
+            <h4><i class="icon icon-magic"></i> Technologies</h4>
             <p>
               Although I'm quite open to try unknown and new technologies,
               it might be interesting to know which technologies I'm already familiar with.
-              Following a list of some of them in aplhabetical order.
             </p>
             <big>
               Programming Languages
@@ -162,10 +188,12 @@
               Frameworks & More
             </big>
             <p>
-              <a href="http://developer.android.com/tools/sdk/ndk/index.html">AndroidNDK</a>,
+              <a href="http://developer.android.com/tools/sdk/ndk/index.html">Android SDK</a>,
               <a href="http://getbootstrap.com/">Bootstrap</a>,
               <a href="https://www.djangoproject.com/">Django</a>,
               <a href="https://jquery.com/">jQuery</a>,
+              <a href="https://laravel.com/">Laravel</a>,
+              <a href="http://materializecss.com/">Materialize</a>,
               <a href="https://nodejs.org/en/">NodeJS</a>,
               <!-- <a href="http://phantomjs.org/">PhantomJS</a>, -->
               <a href="http://www.qt.io/">Qt</a>,
@@ -175,61 +203,64 @@
         </div>
       </section>
 
-      <div id="gallery" class="container">
+      <section id="gallery" class="container grey darken-4">
         <div class="row">
           <div class="col vert-center">
-            <h1>.gallery</h1>
+            <h2>.gallery</h2>
             <img src="img/trippy.gif" />
             <p>
               @TODO
             </p>
           </div>
         </div>
-      </div>
-
+      </section>
     </div>
-    <footer>
-      <small>
-        <div class="row">
-          <div class="col right">
-            js
-          </div>
-          <div class="col">
-            <a href="https://jquery.com/" target="_blank">jQuery</a> <br />
-            <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery easing</a> <br />
-            <a href="http://mmkjony.github.io/enllax.js/" target="_blank">enllax.js</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col right">
-            ico
-          </div>
-          <div class="col">
-            <a href="https://fonticons.com/" target="_blank">fonticons</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col right">
-            img
-          </div>
-          <div class="col">
-            <a href="https://www.flickr.com/photos/narciss/2544461818" target="_blank"><i class="icon icon-creative-commons"></i> Kristaps Bergfelds</a>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col center">
-            <p>
-              <i class="icon icon-creative-commons"></i> 2015 | Senad Ličina
-            </p>
+    <footer class="page-footer white black-text">
+      <div class="container">
+        <small>
+          <div class="row">
+            <div class="col s6 right-align">
+              js
+            </div>
+            <div class="col s6">
+              <a href="https://jquery.com/" target="_blank">jQuery</a> <br />
+              <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery easing</a> <br />
+              <a href="http://mmkjony.github.io/enllax.js/" target="_blank">enllax.js</a>
+            </div>
+            <div class="col s6 right-align">
+              css
+            </div>
+            <div class="col s6">
+              <a href="http://materializecss.com/" target="_blank">MaterializeCSS</a>
+            </div>
+            <div class="col s6 right-align">
+              ico
+            </div>
+            <div class="col s6">
+              <a href="https://fonticons.com/" target="_blank">fonticons</a>
+            </div>
+            <div class="col s6 right-align">
+              img
+            </div>
+            <div class="col s6">
+              <a href="https://www.flickr.com/photos/narciss/2544461818" target="_blank"><i class="icon icon-creative-commons"></i> Kristaps Bergfelds</a>
+            </div>
           </div>
+        </small>
+      </div>
+      <div class="footer-copyright grey-text text-darken-2">
+        <div class="container center-align">
+          <i class="icon icon-creative-commons"></i> 2016 | Senad Ličina
         </div>
-      </small>
+      </div>
     </footer>
 
   </body>
+  <script src="https://use.fonticons.com/cf8a3f19.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.enllax.min.js"></script>
   <script src="js/jquery.easing.js"></script>
+  <script src="js/materialize.min.js"></script>
   <script src="js/main.js"></script>
 </html>
