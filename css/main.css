@@ -125,6 +125,17 @@ nav {
 
 .business-card h1.card-title {
   font-size: 25pt;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+@media (max-width:499px){
+  .business-card h1.card-title {
+    font-size: 16pt;
+  }
+  .business-card p {
+    font-size: 9pt;
+  }
 }
 
 .business-card:first-of-type {
