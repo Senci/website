@@ -16,6 +16,10 @@ body {
   color: #fff;
 }
 
+img {
+  max-width:100%;
+}
+
 a, a:link, a:visited, a:active {
   color: #FF6200;
   text-decoration: none;
