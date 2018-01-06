@@ -97,7 +97,8 @@
   }
 
   #parallax-background {
-    width: 100vw;
+    width: 110vw;
+    object-fit: cover;
   }
 
   #xs-avatar {
