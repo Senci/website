@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-parallax src="static/img/bg.jpg" class="header-container" id="particles-container" height="500">
+    <v-parallax src="static/img/bg.jpg" id="header-container"height="500">
       <v-layout column align-center justify-center>
         <div id="particles">
         </div>
@@ -96,12 +96,16 @@
     right: 0;
   }
 
+  #parallax-background {
+    width: 100vw;
+  }
+
   #xs-avatar {
     pointer-events: none;
     z-index: 1;
   }
 
-  .header-container {
+  #header-container {
     height: 90vh !important;
   }
 
